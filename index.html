@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Oct-4</title>
   <style>
     body {
@@ -13,46 +14,54 @@
       background: #0f0f0f;
       font-family: 'Arial', sans-serif;
       color: #fff;
-      overflow: hidden;
+      overflow-x: hidden;
+      padding: 15px;
+      box-sizing: border-box;
     }
 
     .card {
       text-align: center;
       max-width: 500px;
+      width: 100%;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: clamp(1.5rem, 5vw, 2.5rem); 
       color: #ff3366;
       margin-bottom: 10px;
       animation: fadeIn 2s ease-in-out;
     }
 
     p {
-      font-size: 18px;
+      font-size: clamp(1rem, 4vw, 1.2rem); 
       color: #bbb;
       margin-bottom: 20px;
       animation: fadeIn 3s ease-in-out;
+      line-height: 1.5;
     }
+
     .birthday-card {
-     text-align: center;
-     padding: 20px;
-     }
+      text-align: center;
+      padding: 20px;
+    }
 
     .birthday-card img {
-     max-width: 200px; 
-     width: 100%;
-     height: auto;
-     border-radius: 10px;
+      max-width: 220px; 
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: block;
     }
-   @media (max-width: 480px) {
-    .birthday-card img {
-    max-width: 150px;
+
+    @media (max-width: 480px) {
+      .birthday-card img {
+        max-width: 150px;
+      }
     }
-   }
 
     .quote {
-      font-size: 16px;
+      font-size: clamp(0.9rem, 3.5vw, 1.1rem);
       color: #ffd1dc;
       margin-top: 15px;
       opacity: 0;
@@ -65,7 +74,7 @@
       background: #ff3366;
       color: #fff;
       border-radius: 30px;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: bold;
       text-decoration: none;
       transition: 0.3s;
@@ -85,18 +94,19 @@
 </head>
 <body>
   <div class="card">
-    <h1>Happy Birthday Welcome 22 &lt;3 </h1>
-    <p>If you know, you know Just to say I hate Mohammed Abdu but I love you for putting up with him 💋</p>
-    <img src="IMG_3971.JPG" alt="">
-    <div class="quote" id="quote">If you’re a bird, I’m a bird </div>
+    <h1>Happy Birthday Welcome 22 &lt;3</h1>
+    <p>If you know, you know. Just to say I hate Mohammed Abdu but I love you for putting up with him 💋</p>
+    <div class="birthday-card">
+      <img src="IMG_3971.JPG" alt="Funny meme">
+    </div>
+    <div class="quote" id="quote">If you’re a bird, I’m a bird</div>
 
-    <a href=https://on.soundcloud.com/7LhKiNU2k9GaJnPl1T target="_blank" class="btn">
-      Listen soundcloud
+    <a href="https://on.soundcloud.com/7LhKiNU2k9GaJnPl1T" target="_blank" class="btn">
+      Listen on SoundCloud
     </a>
   </div>
 
   <script>
-    
     setTimeout(() => {
       document.getElementById('quote').style.opacity = 1;
     }, 2000);
