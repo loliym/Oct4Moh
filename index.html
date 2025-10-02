@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oct-4</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0f0f0f;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .card {
+      text-align: center;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #ff3366;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 18px;
+      color: #bbb;
+      margin-bottom: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .birthday-card {
+     text-align: center;
+     padding: 20px;
+     }
+
+    .birthday-card img {
+     max-width: 200px; 
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+    }
+   @media (max-width: 480px) {
+    .birthday-card img {
+    max-width: 150px;
+    }
+   }
+
+    .quote {
+      font-size: 16px;
+      color: #ffd1dc;
+      margin-top: 15px;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #ff3366;
+      color: #fff;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background: #ff4f81;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Birthday Welcome 22 &lt;3 </h1>
+    <p>If you know, you know Just to say I hate Mohammed Abdu but I love you for putting up with him 💋</p>
+    <img src="IMG_3971.JPG" alt="">
+    <div class="quote" id="quote">If you’re a bird, I’m a bird </div>
+
+    <a href=https://on.soundcloud.com/7LhKiNU2k9GaJnPl1T target="_blank" class="btn">
+      Listen soundcloud
+    </a>
+  </div>
+
+  <script>
+    
+    setTimeout(() => {
+      document.getElementById('quote').style.opacity = 1;
+    }, 2000);
+  </script>
+</body>
+</html>
